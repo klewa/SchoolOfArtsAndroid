@@ -1,0 +1,23 @@
+<ion-view view-title="Contacto">
+    <ion-content>
+        <div class="card">
+            <div class="item item-divider">
+                Morada e Contactos
+            </div>
+            <div class="item item-text-wrap">
+                <strong>Escola de Artes</strong>
+                <address>
+                    <span class="icon ion-ios-location"></span>
+                    {{Contact.Line1}}<br>
+                    {{Contact.Line2}}<br>
+                    {{Contact.Line3}}<br>
+                    {{Contact.PostalCode}} {{Contact.City}}<br>
+                    {{Contact.Country}}<br>
+                    <i class="icon ion-ios-telephone" ng-show="Contact.Telephone"></i> {{Contact.Telephone}}<br>
+                     <i class="icon ion-iphone" ng-show="Contact.Mobile"></i> {{Contact.Mobile}}<br>
+                    <i class="icon ion-email" ng-show="Contact.Email"></i> {{Contact.Email}}<br>
+                    <i ng-show="Contact.Skype" class="icon ion-social-skype" aria-hidden="true"></i> {{Contact.Skype}}<br>
+                </address>
+            </div>
+        </div>
+</ion-view>

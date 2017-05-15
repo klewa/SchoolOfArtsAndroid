@@ -1,0 +1,13 @@
+﻿<ion-view view-title="Funcionários">
+    <ion-content>
+        <div class="list">
+            <ion-item ng-repeat="employee in OtherEmployees">
+                <div class="item item-thumbnail-left">
+                    <img src="../../img/Images/maleOrFemaleDefault.png" ng-if="{{employee.Sex != 'H' && employee.Sex != 'M'}}">
+                    <div class="item-text-wrap"><h3>{{employee.Name}}</h3></div>
+                    <div class="item-text-wrap"><h5>{{employee.Discipline}}</h5></div>
+                </div>
+            </ion-item>
+        </div>
+    </ion-content>
+</ion-view>

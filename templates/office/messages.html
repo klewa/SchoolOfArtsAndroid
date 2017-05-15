@@ -1,0 +1,13 @@
+﻿<ion-view view-title="Anúncios">
+    <ion-content class="padding">
+        <div class="list">
+            <div class="item" ng-repeat="msg in Messages">
+                <div class="item-text-wrap"><h2><i class="icon ion-ios-email"></i> {{msg.Title}}</h2></div>
+                <h5><b>{{msg.ValidityDate | date: 'dd/MM/yyyy'}}</b></h5>
+                <hr />
+                <div class="item-text-wrap"><h5>{{msg.Message}} </h5></div>
+                <h6 class="item-note">Publicado a: {{msg.PublicationDate| date: 'dd/MM/yyyy'}}</h6>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
